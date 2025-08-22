@@ -1,11 +1,11 @@
-import './App.css';
-import Hero from './pages/welcome/Hero'
+import '@/index.css';
+import Welcome from './pages/welcome/Welcome';
 import Footer from './components/footer';
 function App() {
 
   return (
     <>
-      <Hero />
+      <Welcome />
       <Footer />
     </>
   )

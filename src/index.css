@@ -1,1 +1,82 @@
 @import "tailwindcss";
+
+body {
+  @apply font-poppins 
+}
+
+
+@theme {
+
+  --font-poppins: 'Poppins', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --color-rich_black-100: #000408;
+  --color-rich_black-200: #000910;
+  --color-rich_black-300: #010d18;
+  --color-rich_black-400: #011220;
+  --color-rich_black-500: #011627;
+  --color-rich_black-600: #034a83;
+  --color-rich_black-700: #067ddf;
+  --color-rich_black-800: #48aafa;
+  --color-rich_black-900: #a4d5fd;
+  --color-baby_powder-100: #226500;
+  --color-baby_powder-200: #43ca00;
+  --color-baby_powder-300: #75ff30;
+  --color-baby_powder-400: #b8ff95;
+  --color-baby_powder-500: #fdfffc;
+  --color-baby_powder-600: #fcfffb;
+  --color-baby_powder-700: #fdfffc;
+  --color-baby_powder-800: #fefffd;
+  --color-baby_powder-900: #fefffe;
+  --color-light_sea_green-100: #092724;
+  --color-light_sea_green-200: #124e48;
+  --color-light_sea_green-300: #1b746c;
+  --color-light_sea_green-400: #249b8f;
+  --color-light_sea_green-500: #2ec4b6;
+  --color-light_sea_green-600: #50d6c9;
+  --color-light_sea_green-700: #7ce0d6;
+  --color-light_sea_green-800: #a7eae4;
+  --color-light_sea_green-900: #d3f5f1;
+  --color-red_(pantone)-100: #2f050a;
+  --color-red_(pantone)-200: #5e0a14;
+  --color-red_(pantone)-300: #8d0f1e;
+  --color-red_(pantone)-400: #bc1427;
+  --color-red_(pantone)-500: #e71d36;
+  --color-red_(pantone)-600: #ec4a5d;
+  --color-red_(pantone)-700: #f17785;
+  --color-red_(pantone)-800: #f6a5ae;
+  --color-red_(pantone)-900: #fad2d6;
+  --color-orange_peel-100: #382100;
+  --color-orange_peel-200: #704100;
+  --color-orange_peel-300: #a86200;
+  --color-orange_peel-400: #e08300;
+  --color-orange_peel-500: #ff9f1c;
+  --color-orange_peel-600: #ffb347;
+  --color-orange_peel-700: #ffc675;
+  --color-orange_peel-800: #ffd9a3;
+  --color-orange_peel-900: #ffecd1;
+}
+
+/* Golden Ratio Font Sizes */
+.text-gold-xs {
+  font-size: 0.618rem;
+} /* 1/phi^2 */
+.text-gold-sm {
+  font-size: 1rem;
+} /* base */
+.text-gold-md {
+  font-size: 1.618rem;
+} /* phi */
+.text-gold-lg {
+  font-size: 2.618rem;
+} /* phi^2 */
+.text-gold-xl {
+  font-size: 4.236rem;
+} /* phi^3 */
+.text-gold-2xl {
+  font-size: 6.854rem;
+} /* phi^4 */
+.text-gold-3xl {
+  font-size: 11.09rem;
+} /* phi^5 */
+
+/* Example usage: <h1 class="text-gold-xl">Title</h1> */

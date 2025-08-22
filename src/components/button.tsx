@@ -9,9 +9,9 @@ type ButtonProps = {
 };
 
 const styleMap : Record<NonNullable<ButtonProps["style"]>, string> = {
-  primary: "bg-emerald-400 text-white hover:bg-emerald-500",
-  secondary: "bg-amber-400 text-white hover:bg-amber-500",
-  danger: "bg-rose-400 text-white hover:bg-red-500",
+  primary : "bg-light_sea_green-400 px-10 py-4 font-bold text-gold-sm text-baby_powder-500 hover:bg-light_sea_green-500",
+  secondary: "bg-gray-300 text-gray-800 hover:bg-gray-400",
+  danger: "bg-red-500 text-white hover:bg-red-600",
 };
 
 /**
