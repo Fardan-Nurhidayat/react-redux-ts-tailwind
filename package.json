@@ -2,6 +2,7 @@
   "name": "react-redux-ts",
   "private": true,
   "version": "0.0.0",
+  "author": "Fardan Nurhidayat" ,
   "type": "module",
   "scripts": {
     "dev": "vite",
