@@ -1,67 +1,42 @@
 import Button from "../../components/button";
-import { motion, AnimatePresence } from "motion/react";
-import { useEffect, useState } from "react";
-
-const names = ["Baca", "Nikmati", "Masak"];
-const initName = "Baca";
+import { motion } from "motion/react";
 
 export default function Hero() {
-  const [currentIdx, setCurrentIdx] = useState(0);
-  const [isStarted, setIsStarted] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsStarted(true);
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  useEffect(() => {
-    if (!isStarted) return;
-    const interval = setInterval(() => {
-      setCurrentIdx(prev => (prev + 1) % names.length);
-    }, 1000);
-    return () => clearInterval(interval);
-  }, [isStarted]);
-
-  const displayName = isStarted ? names[currentIdx] : initName;
-
   return (
     <section
       className='py-16'
       aria-label='Hero Section'>
       <div className='container mx-auto text-center flex items-center justify-center'>
-        <div className='md:w-1/2 lg:w-9/12 w-full'>
-          <div className='flex items-center justify-center gap-2'>
-            <AnimatePresence mode='wait'>
-              <motion.span
-                key={displayName}
-                className='text-gold-lg font-bold text-light_sea_green-400'
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -40 }}
-                transition={{ duration: 1 }}>
-                {displayName}
-              </motion.span>
-            </AnimatePresence>
-            <h1 className='text-gold-lg font-bold text-light_sea_green-400'>
-              aneka ragam resep yang ditulis dengan cinta
-            </h1>
-          </div>
+        <div className='md:w-1/2 lg:w-6/12 w-full'>
+          <motion.h1
+            animate={{ y: [-20, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.5 }}
+            className='text-gold-lg font-bold text-light_sea_green-400'>
+            Baca. Masak. Nikmati. aneka ragam resep yang ditulis dengan cinta
+          </motion.h1>
 
-          <motion.p className='text-gold-md mb-6 text-light_sea_green-600'>
-            Pelajari dan rasakan berbagai resep lezat yang telah kami siapkan untuk Anda. Dari masakan sehari-hari hingga hidangan istimewa, kami punya semuanya.
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            className='text-gold-md mb-6 text-light_sea_green-600'>
+            Pelajari dan rasakan berbagai resep lezat yang telah kami siapkan
+            untuk Anda. Dari masakan sehari-hari hingga hidangan istimewa, kami
+            punya semuanya.
           </motion.p>
-          <Button
-            style='primary'
-            onClick={() => alert("Button Clicked!")}
-            className='cursor-pointer'>
-            Eksplor Resep
-          </Button>
+          <motion.button
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 1, duration: 0.5 }}>
+            <Button
+              style='primary'
+              onClick={() => alert("Button Clicked!")}
+              className='cursor-pointer'>
+              Eksplor Resep
+            </Button>
+          </motion.button>
         </div>
       </div>
     </section>
   );
 }
-
