@@ -33,7 +33,7 @@ const Receipes: React.FC = () => {
   return (
     <section
       id="receipes"
-      className='py-16 bg-baby_powder-50'
+      className='pt-24 pb-16 bg-baby_powder-50'
       aria-label='Receipes Section'>
       <div className='max-w-5xl mx-auto px-4 text-center'>
         <motion.h2 

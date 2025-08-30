@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className='py-16'
+      className='pt-24 pb-8'
       aria-label='Hero Section'>
       <div className='container mx-auto text-center flex items-center justify-center'>
         <div className='md:w-1/2 lg:w-6/12 w-full'>
@@ -28,7 +28,7 @@ export default function Hero() {
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5 }}>
-            <a href='#receipes' className="no-underline text-sm font-semibold text-white bg-light_sea_green-400 hover:bg-light_sea_green-600 rounded px-6 py-3 shadow-md inline-block transition-colors duration-300">
+            <a href='#receipes' className="no-underline text-sm font-semibold text-white bg-light_sea_green-400 hover:bg-light_sea_green-600 rounded px-8 py-4 shadow-md inline-block transition-colors duration-300">
               Eksplor Resep
             </a>
           </motion.button>
