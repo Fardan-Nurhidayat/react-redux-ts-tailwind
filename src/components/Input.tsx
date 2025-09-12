@@ -19,6 +19,7 @@ export default function Input({
   return (
     <input
       id={id}
+      autoComplete="on"
       type={type}
       placeholder={placeholder}
       value={value}

@@ -18,7 +18,7 @@ type ButtonProps = {
  * @param size - Button size variant
  */
 const styleMap: { [key in NonNullable<ButtonProps["style"]>]: string } = {
-  primary: "px-4 py-2 bg-light_sea_green-400 hover:bg-light_sea_green-600 text-white transition-colors duration-300",
+  primary: "px-4 py-2 bg-light_sea_green-400 hover:bg-light_sea_green-600 text-white transition-colors duration-300 cursor-pointer",
   secondary: "px-4 py-2 bg-baby_powder-900 hover:bg-light_sea_green-400 text-light_sea_green-400 hover:text-white border border-light_sea_green-400 transition-colors duration-300",
   danger: "px-4 py-2 bg-red-600 hover:bg-red-800 text-white transition-colors duration-300", 
 };
